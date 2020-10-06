@@ -4,7 +4,7 @@ body {
 
 .main {
   position: relative;
-  background-image: url(/assents/header/bg-image.png);
+  background-image: url(assents/header/bg-image.png);
   width: 1600px;
   left: 50%;
   margin-left: -800px;
@@ -68,7 +68,7 @@ h1 {
     width: 1600px;   
     color: white;      
     font-size: 14px;    
-    background-image: url(/assents/header/bg-image.png);
+    background-image: url(assents/header/bg-image.png);
     
 }
 
@@ -514,7 +514,7 @@ color: #4E4E4E;
   
   height: 524px;
   width: 1600px;
-  background-image: url(/assents/signup/image.png) ;
+  background-image: url(assents/signup/image.png) ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -523,7 +523,7 @@ color: #4E4E4E;
 
 #signup1{
   margin-top: 200px;
-  width: 385px; /* !!!!!!!!!!!!! 385!*/
+  width: 385px;
   height: 28px;
   
 }
@@ -564,7 +564,7 @@ color: #FFFFFF;
 }
 input[type=submit] {
   background-color: #00AFDB;
-  background-image: url(/assents/signup/fa-check.svg);
+  background-image: url(assents/signup/fa-check.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
