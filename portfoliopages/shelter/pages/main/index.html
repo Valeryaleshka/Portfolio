@@ -3,52 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shelter Main Page</title>
   </head>
   <body>
-    <div id="mainPage">
-      <div id="notOnly">
-        <div class="header" id="header">
-          <div id="headerLogo">
+    <div class="burgerFont"></div>
+    <div class="mainPage">
+      <div class="notOnly">
+        <div class="header">
+          <div class="headerLogo">
             <h1>Cozy House</h1>
             <p>Shelter for pets in Boston</p>
-          </div>
-          <div id="headerNavMenu">
+          </div>          
+          <div class="burger" id="burgerPets"></div>
+          <div class="headerNavMenu">
             <a id="activeHref" href="index.html">About the shelter</a>
             <a href="../pets/index.html">Our pets</a>
-            <a href="">Help the shelter</a>
-            <a href="">Contacts</a>
+            <a href="javascript: void(0)">Help the shelter</a>
+            <a href="javascript: void(0)">Contacts</a>
           </div>
+          
+          
+          <div class="headerNavMenuBurger">
+            <div class="header">
+              <div class="headerLogo">
+                <h1>Cozy House</h1>
+                <p>Shelter for pets in Boston</p>
+              </div>          
+              <div class="burger"></div>              
+            </div>
+            <div class="burgerHref">
+              <a id="activeHref" href="index.html">About the shelter</a>
+              <a href="../pets/index.html">Our pets</a>
+              <a href="javascript: void(0)">Help the shelter</a>
+              <a href="javascript: void(0)">Contacts</a>
+            </div>           
+          </div> 
         </div>
-        <div id="notOnlyContent">
-          <div id="notOnlyContentLeft">
-            <div id="notOnlyHouse"><h2>Not only people need a house</h2></div>
-            <div id="weOffer">
+
+        <div class="notOnlyContent">
+          <div class="notOnlyContentLeft">
+            <div class="notOnlyHouse"><h2>Not only people need a house</h2></div>
+            <div class="weOffer">
               We offer to give a chance to a little and nice puppy with an
               extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </div>
-            <div id="MakeAFriend">
-              <button><p>Make a friend</p></button>
-            </div>
+            <form action="../pets/index.html" class="MakeAFriend">
+              <button type="submit"><p>Make a friend</p></button>
+            </form>            
           </div>
-          <div id="notOnlyContentRight"></div>
+          <div class="notOnlyContentRight"></div>
         </div>
       </div>
+
       <div id="about">
         <div id="aboutContent">
           <div id="aboutContentFoto"></div>
           <div id="aboutContentText">
-            <h3>About the shelter <br />“Cozy House”</h3>
-            <p style="margin-top: 25px">
+            <h3>About the shelter “Cozy House”</h3>
+            <p class="about_p">
               Currently we have 121 dogs and 342 cats on our hands and
               statistics show that only 20% of them will find a family. The
               others will continue to live with us and will be waiting for a
               lucky chance to become dearly loved.
             </p>
-            <p style="margin-top: 25px">
+            <p class="about_p" id="about_p_2">
               We feed our wards with the best food and make sure that they do
               not get sick, feel comfortable (including psychologically) and
               well. We are supported by 87 volunteers and 28 employees of
@@ -62,186 +82,109 @@
       <div id="ourFriends">
         <div id="ourFriendsContent">
           <div id="ourFriendsContenth3">
-            <center>
-              <h3>Our friends who <br />are looking for a house</h3>
-            </center>
+            <h3>Our friends who <br />are looking for a house</h3>
           </div>
           <div id="ourFriendsBanners">
             <button class="move" id="btn-prev">
               <img src="../../assets/images/mainPage/button_arrow_left.svg" />
             </button>
             <div id="cardHolder">
-                <div id="slider">
-              <div class="card">
-                <div>
-                  <img src="../../assets/images/mainPage/Katrine.png" alt="" />
-                </div>
-                <div id="cardbuttom">
-                  <div><p class="petCardTitle">Katrine</p></div>
-                  <div>
-                    <button class="petButton"><p>Learn more</p></button>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div>
-                  <img src="../../assets/images/mainPage/Jennifer.png" alt="" />
-                </div>
-                <div id="cardbuttom">
-                  <div><p class="petCardTitle">Jennifer</p></div>
-                  <div>
-                    <button class="petButton"><p>Learn more</p></button>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div>
-                  <img src="../../assets/images/mainPage/Woody.png" alt="" />
-                </div>
-                <div id="cardbuttom">
-                  <div><p class="petCardTitle">Woody</p></div>
-                  <div>
-                    <button class="petButton"><p>Learn more</p></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div>
-                  <img src="../../assets/images/mainPage/sophia.png" alt="" />
-                </div>
-                <div id="cardbuttom">
-                  <div><p class="petCardTitle">Sophia</p></div>
-                  <div>
-                    <button class="petButton"><p>Learn more</p></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div>
-                  <img src="../../assets/images/mainPage/pets-timmy.png" alt="" />
-                </div>
-                <div id="cardbuttom">
-                  <div><p class="petCardTitle">Timmy</p></div>
-                  <div>
-                    <button class="petButton"><p>Learn more</p></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div>
-                  <img src="../../assets/images/mainPage/pets-charly.png" alt="" />
-                </div>
-                <div id="cardbuttom">
-                  <div><p class="petCardTitle">Charly</p></div>
-                  <div>
-                    <button class="petButton"><p>Learn more</p></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div>
-                  <img src="../../assets/images/mainPage/pets-scarlet.png" alt="" />
-                </div>
-                <div id="cardbuttom">
-                  <div><p class="petCardTitle">Scarlett</p></div>
-                  <div>
-                    <button class="petButton"><p>Learn more</p></button>
-                  </div>
-                </div>
-              </div>
+              
             </div>
-            
-             </div>
-             <button class="move" id="btn-next">
-                <img
-                  src="../../assets/images/mainPage/button_arrow_right.svg"
-                  alt=""
-                />
-              </button>
+            <button class="move" id="btn-next">
+              <img
+                src="../../assets/images/mainPage/button_arrow_right.svg"
+                alt=""
+              />
+            </button>
           </div>
-          <button><p>Get to know the rest</p></button>
+          <div id="buttons2">
+            <button class="move" id="btn-prev2">
+              <img src="../../assets/images/mainPage/button_arrow_left.svg" />
+            </button>
+            <button class="move" id="btn-next2">
+              <img
+                src="../../assets/images/mainPage/button_arrow_right.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          
+          <form action="../pets/index.html">
+            <button type="submit" id="getToKnowTheRest"><p>Get to know the rest</p></button>
+          </form> 
         </div>
       </div>
       <div id="help">
         <div id="helpContent">
           <div id="helpHeader">
-            <h3>How you can help<br />our shelter</h3>
+            <h3>How you can help our shelter</h3>
           </div>
           <div id="helpList">
-            <div id="helpListTop">
-              <div class="helpCard">
-                <img
-                  src="../../assets/images/mainPage/help/PetFood.svg"
-                  alt=""
-                />
-                <h4>Pet food</h4>
-              </div>
-              <div class="helpCard">
-                <img
-                  src="../../assets/images/mainPage/help/transportation.svg"
-                  alt=""
-                />
-                <h4>Transportation</h4>
-              </div>
-              <div class="helpCard">
-                <img src="../../assets/images/mainPage/help/toys.svg" alt="" />
-                <h4>Toys</h4>
-              </div>
-              <div class="helpCard">
-                <img
-                  src="../../assets/images/mainPage/help/bowls-and-cups.svg"
-                  alt=""
-                />
-                <h4>Bowls and cups</h4>
-              </div>
-              <div class="helpCard">
-                <img
-                  src="../../assets/images/mainPage/help/shampoos.svg"
-                  alt=""
-                />
-                <h4>Shampoos</h4>
-              </div>
+            <div class="helpCard">
+              <img src="../../assets/images/mainPage/help/PetFood.svg" alt="" />
+              <h4>Pet food</h4>
             </div>
-            <div id="helpListBottom">
-              <div class="helpCard">
-                <img
-                  src="../../assets/images/mainPage/help/vitamins.svg"
-                  alt=""
-                />
-                <h4>Vitamins</h4>
-              </div>
-              <div class="helpCard">
-                <img
-                  src="../../assets/images/mainPage/help/medicines.svg"
-                  alt=""
-                />
-                <h4>Medicines</h4>
-              </div>
-              <div class="helpCard">
-                <img
-                  src="../../assets/images/mainPage/help/collars-or-leashes.svg"
-                  alt=""
-                />
-                <h4>Collars / leashes</h4>
-              </div>
-              <div class="helpCard">
-                <img
-                  src="../../assets/images/mainPage/help/sleeping-area.svg"
-                  alt=""
-                />
-                <h4>Sleeping areas</h4>
-              </div>
+            <div class="helpCard">
+              <img
+                src="../../assets/images/mainPage/help/transportation.svg"
+                alt=""
+              />
+              <h4>Transportation</h4>
+            </div>
+            <div class="helpCard">
+              <img src="../../assets/images/mainPage/help/toys.svg" alt="" />
+              <h4>Toys</h4>
+            </div>
+            <div class="helpCard">
+              <img
+                src="../../assets/images/mainPage/help/bowls-and-cups.svg"
+                alt=""
+              />
+              <h4>Bowls and cups</h4>
+            </div>
+            <div class="helpCard">
+              <img
+                src="../../assets/images/mainPage/help/shampoos.svg"
+                alt=""
+              />
+              <h4>Shampoos</h4>
+            </div>
+
+            <div class="helpCard">
+              <img
+                src="../../assets/images/mainPage/help/vitamins.svg"
+                alt=""
+              />
+              <h4>Vitamins</h4>
+            </div>
+            <div class="helpCard">
+              <img
+                src="../../assets/images/mainPage/help/medicines.svg"
+                alt=""
+              />
+              <h4>Medicines</h4>
+            </div>
+            <div class="helpCard">
+              <img
+                src="../../assets/images/mainPage/help/collars-or-leashes.svg"
+                alt=""
+              />
+              <h4>Collars / leashes</h4>
+            </div>
+            <div class="helpCard">
+              <img
+                src="../../assets/images/mainPage/help/sleeping-area.svg"
+                alt=""
+              />
+              <h4>Sleeping areas</h4>
             </div>
           </div>
         </div>
       </div>
       <div id="donation">
         <div id="donationContent">
-          <img src="../../assets/images/mainPage/donation-dog.png" alt="" />
+          <div id="donationDog"></div>
           <div id="donationInfo">
             <h3>You can also<br />make a donation</h3>
             <h5>Name of the bank / Type of bank account</h5>
