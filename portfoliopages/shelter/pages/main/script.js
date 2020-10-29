@@ -111,6 +111,8 @@ let currentItem = 0;
 
 window.addEventListener('resize', resizeFunction);
 
+document.querySelector("body > div.burgerFont").addEventListener("click", slideToRight,burgerFontOff);
+document.querySelector("body > div.burgerFont").addEventListener("click", burgerFontOff);
 document
   .querySelector("body > div.mainPage > div.notOnly > div.header > div.burger")
   .addEventListener("click", slideToLeft);
@@ -354,7 +356,7 @@ function todo() {
       .querySelector("#cardHolder")
       .insertAdjacentHTML(
         "beforeend",
-        addPetsCard(mydata[i],mydata[(i+2)% mydata.length],mydata[(i+4) % mydata.length], i)
+        addPetsCard(mydata[(i+random)% mydata.length],mydata[(i+2+random)% mydata.length],mydata[(i+4+random) % mydata.length], i)
       );
       document.querySelector('.slider').classList.add('active');
       }else{
@@ -362,7 +364,7 @@ function todo() {
       .querySelector("#cardHolder")
       .insertAdjacentHTML(
         "beforeend",
-        addPetsCard(mydata[i],mydata[(i+2)% mydata.length],mydata[(i+4) % mydata.length], i)
+        addPetsCard(mydata[(i+random)% mydata.length],mydata[(i+2+random)% mydata.length],mydata[(i+4+random) % mydata.length], i)
       );
       }
   console.log('hello')
@@ -410,25 +412,25 @@ function nextItem(n) {
   showItem('from-right');
 }
 
-document.querySelector('#btn-next').addEventListener('click', function() {
+document.querySelector('#btn-prev').addEventListener('click', function() {
  if(isEnabled){
      previousItem(currentItem)
  }
 })
 
-document.querySelector('#btn-prev').addEventListener('click', function() {
+document.querySelector('#btn-next').addEventListener('click', function() {
   if(isEnabled){
       nextItem(currentItem)
   }  
 })
 
-document.querySelector('#btn-next2').addEventListener('click', function() {
+document.querySelector('#btn-prev2').addEventListener('click', function() {
   if(isEnabled){
       previousItem(currentItem)
   }
  })
  
- document.querySelector('#btn-prev2').addEventListener('click', function() {
+ document.querySelector('#btn-next2').addEventListener('click', function() {
    if(isEnabled){
        nextItem(currentItem)
    }  

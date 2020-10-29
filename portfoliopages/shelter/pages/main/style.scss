@@ -10,7 +10,16 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 55;
+  z-index: 1;
+}
+
+#page-number{
+
+  background-color: #f1cdb3;
+  &:hover{
+    cursor: auto;
+    
+  }
 }
 
 .popup {
@@ -174,6 +183,18 @@
   to {
     opacity: 1;
   }
+}
+
+.white{
+  position: sticky;
+  height: 120px;
+  width: 100vw;
+  z-index: 4500;
+  background-color: white;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  
 }
 
 #headerPets {
@@ -347,6 +368,7 @@ body {
 
 #petsGrid {
   height: 1342px;
+  background-color:#F6F6F6;
 
   display: flex;
   flex-direction: column;
@@ -387,7 +409,7 @@ body {
 .petsGridConteinerButtons {
   height: 52px;
   width: 340px;
-  margin-top: 40px;
+  margin-top: 44px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -707,10 +729,17 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
 
   &:hover {
     cursor: pointer;
+   
+    img{
+      opacity: 0.8;
+    }
   }
+
+ 
 }
 
 .to-left{
@@ -2430,6 +2459,12 @@ body {
     
   }*/
 
+  @keyframes spin {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+  }
+
+
   .headerNavMenuBurger {
     display: flex;
     flex-direction: column;
@@ -2440,13 +2475,15 @@ body {
     width: 320px;
     margin-right: -320px;
     background-color: #292929;
-    z-index: 0;
+    z-index: 5000;
     transition: 1s;
     .burger {
-      transform: rotate(-0.25turn);
+      animation: spin 5s linear 0s infinite;
+      
     }
 
     .header {
+      
       width: 257px;
     }
     a {
