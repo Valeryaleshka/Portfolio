@@ -1,9 +1,9 @@
 document.querySelector(".webdev").onclick = function(){
-    window.location.href = "https://valeryaleshka.github.io/Portfolio/portfoliopages/webdev/";
+    window.location.href = "https://valeryaleshka.github.io//valeryaleshka-JS2020Q3/webdev/";
 }
 
 document.querySelector(".calculator").onclick = function(){
-    window.location.href = "https://valeryaleshka.github.io/Portfolio/portfoliopages/calculator/";
+    window.location.href = "https://valeryaleshka.github.io//valeryaleshka-JS2020Q3/calculator/";
 }
 
 document.querySelector(".shelter").onclick = function(){
