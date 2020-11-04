@@ -14,4 +14,6 @@ document.querySelector(".momentum").onclick = function(){
     window.location.href = "https://rolling-scopes-school.github.io/valeryaleshka-JS2020Q3/momentum/";
 }
 
-
+document.querySelector(".keyboard").onclick = function(){
+    window.location.href = "https://rolling-scopes-school.github.io/valeryaleshka-JS2020Q3/virtual-keyboard/";
+}

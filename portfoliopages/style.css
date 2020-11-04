@@ -65,12 +65,13 @@ body {
 .portfolioConteiner {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 500px;
+  height: 1000px;
   width: 100%; }
 
 .content {
@@ -79,7 +80,7 @@ body {
   position: relative;
   margin: 0%;
   width: 30%;
-  height: 100%;
+  height: 50%;
   border: 2px solid rgba(0, 0, 0, 0.1); }
   .content:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -104,6 +105,9 @@ body {
 
 .momentum {
   background-image: url("assets/momentum.jpg"); }
+
+.keyboard {
+  background-image: url("assets/kyboard.jpg"); }
 
 .description {
   height: 140px;
