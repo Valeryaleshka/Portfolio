@@ -83,7 +83,7 @@ body {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 1000px;
+  height: 50vh;
   width: 100%;
 }
 
@@ -93,7 +93,7 @@ body {
   position: relative;
   margin: 0%;
   width: 30%;
-  height: 50%;
+  height: 100%;
 
   border: 2px solid rgba(0, 0, 0, 0.1);
   &:hover {
@@ -130,6 +130,15 @@ body {
 .keyboard {
   background-image: url("assets/kyboard.jpg");
 }
+
+.english {
+  background-image: url("assets/english.png")
+}
+
+.puzzle {
+  background-image: url("assets/puzzle.png")
+}
+
 
 .description {
   height: 140px;
