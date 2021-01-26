@@ -1,0 +1,95 @@
+@import ./partials/displays
+@import ./partials/fonts
+@import ./partials/colors
+@import ./partials/animaitons
+  
+html,
+body 
+  padding: 0
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+  +flex()
+
+body
+  width: 100vw
+
+#__next
+  width: 100%
+
+a 
+  color: inherit
+  text-decoration: none
+
+* , ::before, ::after
+  box-sizing: border-box
+  +mainFont
+
+svg
+  text-align: center
+  display: inline-block
+  width: 100%
+
+.transition
+  transition-duration: 1s
+
+.rsm-geography
+  transition-duration: 0.5s
+  &:hover
+    cursor: pointer
+
+
+.rsm-marker
+  circle
+    transition-duration: 0.5s
+    &:hover
+      cursor: pointer
+
+.tooltip
+  position: absolute !important
+
+.transform
+  transition-timing-function: ease-in-out
+  transition-duration: 0.5s
+
+.nav-item
+  a
+    position: relative
+    color: #fff !important
+    font-weight: 700
+    top: 0
+    &:hover
+      cursor: pointer
+      top: 2px
+      transition-duration: 0.2s
+      color: #c2adad !important
+
+
+.__react_component_tooltip
+  background: none !important
+
+.chosen
+  fill: $yellow !important
+  outline: none !important
+
+@keyframes loading
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(360deg)
+
+.loading
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.3)
+  +flex()
+.loading-logo  
+  content: ""
+  width: 64px
+  height: 64px
+  background: url('/icons/loading.png')
+  background-size: cover
+  animation: loading 2s ease-in-out 0s infinite
+

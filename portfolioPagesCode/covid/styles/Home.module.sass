@@ -1,0 +1,19 @@
+@import ./partials/displays
+@import ./partials/colors
+
+.container
+  display: grid
+  width: 100vw
+  height: 100vh
+  grid-template-columns: 400px 5fr 1.8fr
+  align-items: start
+
+.leftPart
+  width: 100%
+  position: relative
+  top: 0
+  left: 0
+  +flex(column, flex-start)
+  height: 100%
+  font-size: 20%
+

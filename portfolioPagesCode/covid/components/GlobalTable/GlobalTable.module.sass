@@ -1,0 +1,65 @@
+@import ../../styles/partials/colors
+@import ../../styles/partials/displays
+@import ../../styles/partials/animaitons
+
+.root
+  width: 100%
+
+.global
+  +flex(column)
+  width: 100%
+  height: 100%
+  margin: 0
+
+  *
+    color: $dark-blue
+
+.global-line
+  background: $dark-blue
+  padding: 0
+  padding-left: 20px
+  border: 1px solid $dark-bg
+  width: 100%
+  height: 30px
+  +flex(row, flex-start)
+
+.loading
+  color: $dark-blue
+
+.fadeOut
+  animation: fade-out 0.5s linear 0s
+
+.fadeIn
+  opacity: 0
+  animation: fade-in 0.5s linear 0s
+
+.dataKey
+  color: #fff
+.dataValue
+  color: $yellow
+  margin-left: 20px
+
+.dataKey, .dataValue
+  font-size: 18px
+
+.list-group
+  width: 100% !important
+  height: 100% !important
+  +flex(column, flex-start, center)
+
+.dropdown
+  width: 100%
+  height: 236px
+
+  overflow-y: scroll
+
+.countries
+  width: 100%
+  height: 0px
+  padding: 0
+
+.change-button
+  margin: 5px 10px
+
+.btn-success
+  width: 100%

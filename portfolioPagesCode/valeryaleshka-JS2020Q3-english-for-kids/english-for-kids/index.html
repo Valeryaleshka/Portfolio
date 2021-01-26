@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English-for-kids</title>
+  <link rel="shortcut icon" href="./assets/img/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <div class='winning hidden' id="winning"><video src="https://media4.giphy.com/media/cKnPP9JS8UmwOYwTIn/giphy.mp4"
+      autoplay="true" loop="true"></video></div>
+  <div class='loser hidden' id="loser"><video
+      src="https://media0.giphy.com/media/cr9vIO7NsP5cY/giphy.mp4?cid=ecf05e47aodbobawleusu434bxxl2bq9ta5tlna0yvhk728w&rid=giphy.mp4"
+      autoplay="true" loop="true"></video>
+  </div>
+  <div class="wrapper">
+    <div class="nav-toggle">
+      <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="nav">
+      <ul></ul>
+    </nav>
+    <header>
+      <p>Training</p>
+      <div>
+        <label class="switch">
+          <input type="checkbox" id="switchValue" value="false" name="disableYXLogo">
+          <div class="slider round"></div>
+        </label>
+      </div>
+      <p>Play</p>
+    </header>
+    <div class="score hidden"></div>
+    <main></main>
+    <script src="src/main.bundle.js"></script>
+    <button class="start hidden">Start</button>
+</body>
+
+</html>
