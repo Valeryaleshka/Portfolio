@@ -2,6 +2,20 @@ body {
   margin: 0;
 }
 
+a {
+  color: wheat;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: red;
+}
+
 li {
   list-style-type: none;
 }
@@ -108,9 +122,12 @@ li {
   width: 30%;
   height: 45%;
   border: 2px solid rgba(0, 0, 0, 0.1);
+  will-change: box-shadow, border;
+  transition: box-shadow 0.5s ease-in-out, border 0.5s ease-in-out;
 }
 .content:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgb(48, 48, 48);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.8), 0 10px 10px rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
 
